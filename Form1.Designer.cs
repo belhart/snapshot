@@ -34,6 +34,7 @@ namespace Snapshot
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.captureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,9 +51,10 @@ namespace Snapshot
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.closeToolStripMenuItem});
+            this.closeToolStripMenuItem,
+            this.captureToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 56);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(131, 52);
             // 
             // closeToolStripMenuItem
             // 
@@ -60,6 +62,13 @@ namespace Snapshot
             this.closeToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
+            // 
+            // captureToolStripMenuItem
+            // 
+            this.captureToolStripMenuItem.Name = "captureToolStripMenuItem";
+            this.captureToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.captureToolStripMenuItem.Text = "Capture";
+            this.captureToolStripMenuItem.Click += new System.EventHandler(this.captureToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -80,6 +89,7 @@ namespace Snapshot
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem captureToolStripMenuItem;
     }
 }
 

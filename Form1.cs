@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Drawing.Imaging;
 
 namespace Snapshot
 {
@@ -54,6 +55,12 @@ namespace Snapshot
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void captureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 capture = new Form2();
+            capture.Show();
         }
 
         //protected override void WndProc(ref Message m)
