@@ -65,6 +65,13 @@ namespace Snapshot
             }
         }
 
+        private void captureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 save = new Form1(this.Location.X, this.Location.Y, this.Width, this.Height, this.Size);
+            this.notifyIcon1.Visible = false;
+        }
+
         Rectangle TopRight { get { return new Rectangle(this.ClientSize.Width - _, 0, _, _); } }
         Rectangle BottomLeft { get { return new Rectangle(0, this.ClientSize.Height - _, _, _); } }
         Rectangle BottomRight { get { return new Rectangle(this.ClientSize.Width - _, this.ClientSize.Height - _, _, _); } }
@@ -82,7 +89,7 @@ namespace Snapshot
         {
 
         }
-        protected override void OnPaint(PaintEventArgs e) // you can safely omit this method if you want
+        protected override void OnPaint(PaintEventArgs e)
         {
             e.Graphics.FillRectangle(Brushes.Green, Top);
             e.Graphics.FillRectangle(Brushes.Green, Left);
